@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+/* fuente descargada en el pc */
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../assets/fonts/Roboto-Light.ttf');
+    color:rgb(77, 53, 23)
+}
+
+@font-face {
+	font-family: 'open sans';
+	src: url('../assets/fonts/Open_Sans/OpenSans-Light.ttf');
+    color:rgb(77, 53, 23)
+}
+
+@font-face {
+	font-family: 'Belleza';
+	src: url('../assets/fonts/Belleza-Regular.ttf');
+    color:rgb(77, 53, 23)
+}
+
+.page_content{
+	background-image: url("../img/cebada_Patriota.jpg");
+	/*background: #FF7A59;
+    opacity: .2;*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top:0;
+	margin-bottom:0;
+	
+	
+}
+
+
+
+body { 
+	height: 100vh;
+	overflow-x: hidden;
+	
+}
+/*se fija el header*/
+header{
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 8%;
+	position: fixed;
+	display: inline-block;
+}
+
+
+
+
+/* se crea el estilo de los botones de navegacion*/
+nav {
+	float: right;
+	font-family: 'open sans', sans-serif;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li{
+	float: left;
+	font-family: 'open sans', sans-serif;
+	font-size: 1rem;
+}
+nav ul li a {
+	display: block;
+	padding: 15px;
+	color: #d4d4cf;
+	text-decoration: none;
+	
+}
+nav ul li:hover {
+	background: #291901;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color:rgb(224, 168, 95)
+}
+
+a {
+	color: rgba(10, 10, 10, 0.781);
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 1.2rem;
+	line-height: 1rem;
+	border-radius: 5%;
+}
+
+.contenedorCervezas{
+	display: flex;
+}
+
+.contenedorMain{
+	height: auto;
+	width: auto;
+}
+
+/* Imagen fija de fondo*/
+/*.contenedorMain  {
+	background-image: url("../img/cebada_Patriota.jpg");
+	max-height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: auto;
+	margin-bottom:0;
+}*/
+
+.tituloIndex{
+	margin-top: 20%;
+	font-family: 'Open Sans', sans-serif;
+	color: rgba(10, 10, 10, 0.781);
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 5rem;	
+}
+
+/*parrafo al lado de la imagen del index*/
+.textoImagen p {
+	font-size: 1rem;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.877);
+	border-radius:4px;
+	text-align:justify;
+	height: auto;
+	margin-bottom: 0;
+}
+
+/*imagen que acompaña el texto en el index*/
+.textoImagen img{
+	padding: 4px;
+	background-color: rgba(255, 255, 255, 0.877);
+	border-radius:2px;
+	justify-content: center;
+	height: auto;
+	height:fit-content;
+	max-width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+.TituloParrafoIndex{
+	padding: 4px;
+	background-color: rgba(255, 255, 255, 0.877);
+	border-radius:2px;
+	text-align: center;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.imgParraIn{
+	padding: 4px;
+	background-color: rgba(255, 255, 255, 0.877);
+	border-radius:2px;
+	text-align: center;
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+/*footer, redes, copy, todo centrado*/
+footer {
+	background:rgba(0,0,0,0.7);
+	padding: 1rem;
+	text-decoration: #291901;
+	text-align: center;
+	
+    bottom: 0;
+
+    align-items: center;	
+}
+footer a{
+	text-decoration: none;
+	color: #d4d4cf;
+}
+footer a:hover{
+	color: rgb(224, 168, 95);
+}
+
+
+/* pantalla pequeña */
+	@media (max-width: 767px) {
+		.textoImagen img{
+			width: 50%;
+		}
+}
+/* Pantalla mediana */
+	@media (min-width: 768px) and (max-width: 991px) {
+		#encabezado{
+			height: auto;
+		}
+		#contenido{
+			width: auto;
+		}
+		#barra_lateral{
+			display:none;
+		}
+		
+}
+
+/*Pantalla grande */
+	@media (min-width: 992px) {
+		#contenedor{
+			width: 90%;
+		}
+		#contenido{
+			width: 60%;
+		}
+		#barra_lateral{
+			width:30%;
+}
+	}

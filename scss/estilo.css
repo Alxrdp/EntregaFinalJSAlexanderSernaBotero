@@ -1,0 +1,564 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*footer, redes, copy*/
+footer {
+  z-index: 10;
+  position: fixed;
+  bottom: 2px;
+  right: 2px;
+  align-items: end;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px;
+}
+footer .fa-instagram:before {
+  color: #a722ac !important;
+}
+footer .fa-facebook:before {
+  color: #2c29c7 !important;
+}
+footer .fa-twitter:before {
+  color: #2172dd !important;
+}
+footer .contenedorRedes ul li a:hover {
+  color: #00abf0;
+  background: rgba(22, 21, 21, 0.3215686275);
+  padding: 10px 10px;
+  border-radius: 2px;
+  margin-right: 0%;
+}
+
+.copy a {
+  text-decoration: none !important;
+  color: #333333;
+  align-items: center !important;
+}
+
+.fondoUbicacion {
+  background-color: rgba(0, 0, 0, 0.862745098);
+  color: antiquewhite;
+}
+
+.Ubicacion {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.list-group-item {
+  border: 0 !important;
+  background-color: rgba(255, 255, 255, 0.631372549);
+}
+
+.contenDirecciones {
+  background-color: rgba(246, 246, 246, 0.0352941176);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 70%;
+  margin: 6% 10% 1% 10%;
+  padding: 2%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px gray;
+}
+
+.contenUbicacion {
+  display: flex;
+}
+
+.mapa-responsive {
+  text-align: center;
+  height: 80%;
+  width: 50%;
+}
+.mapa-responsive h3 {
+  background-color: #cfb22d;
+  margin: 0 auto;
+  padding: 5px;
+  display: inline;
+}
+.mapa-responsive h5 {
+  background-color: #cfb22d;
+  margin: 0 auto;
+  padding: 5px;
+  display: inline;
+}
+
+/*estilo de fomulario*/
+.formularioUbicacion {
+  margin-top: 0%;
+  margin-bottom: 50px;
+  padding-bottom: 5%;
+}
+.formularioUbicacion form {
+  width: 500px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.631372549);
+  position: relative;
+  font-family: Inter, sans-serif;
+  color: rgb(19, 19, 19);
+  box-shadow: 1px 1px 10px gray;
+}
+.formularioUbicacion form label {
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+.formularioUbicacion form input[type=text],
+.formularioUbicacion form input[type=email] {
+  width: 380px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+.formularioUbicacion form input[type=submit] {
+  width: 20%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+}
+.formularioUbicacion form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .Ubicacion {
+    position: relative;
+  }
+  .Ubicacion .contenUbicacion {
+    height: auto;
+    margin-bottom: 1%;
+  }
+  .Ubicacion .contenDirecciones {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 12% 1% 1% 1%;
+    padding: 0%;
+    height: 100%;
+    display: grid;
+    line-height: 0.8;
+    font-weight: 1rem;
+    align-items: center;
+  }
+  .Ubicacion .contenDirecciones .list-group {
+    width: 60%;
+    padding: 1%;
+    margin: 0 auto;
+  }
+  .Ubicacion .contenDirecciones .mapa-responsive {
+    margin: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .Ubicacion .formularioUbicacion form {
+    margin: 15% auto 2% auto;
+  }
+}
+.contenVideo {
+  font-family: "Inter", sans-serif;
+}
+.contenVideo video {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  overflow: hidden;
+  display: block;
+}
+.contenVideo .parrafoTitulo .tituloH1 {
+  letter-spacing: -0.3rem;
+  word-spacing: -2rem;
+  font-weight: lighter;
+  color: rgb(248, 250, 252);
+  font-size: 9rem;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4392156863), 1px 1px 1px rgba(0, 0, 0, 0.4392156863), -2px 2px 1px rgba(0, 0, 0, 0.4392156863), 2px -2px 1px rgba(0, 0, 0, 0.4392156863);
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.contenVideo .parrafoTitulo h2 {
+  color: rgb(248, 250, 252);
+  font-size: 6rem;
+  font-weight: lighter;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4392156863), 1px 1px 1px rgba(0, 0, 0, 0.4392156863), -2px 2px 1px rgba(0, 0, 0, 0.4392156863), 2px -2px 1px rgba(0, 0, 0, 0.4392156863);
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+  .contenVideo video {
+    width: auto;
+    transform: translateX(-55%);
+    position: fixed;
+    overflow: hidden;
+  }
+  .contenVideo .parrafoTitulo .tituloH1 {
+    letter-spacing: normal;
+    font-weight: lighter;
+    font-size: 8rem;
+  }
+  .contenVideo .parrafoTitulo h2 {
+    font-size: 4.3rem;
+    top: 45%;
+  }
+}
+header {
+  z-index: 10;
+}
+header .navbar {
+  font-family: "Inter", sans-serif;
+}
+header .navbar .text-bg-dark {
+  background-color: #cfb22d !important;
+}
+header .navbar h5 {
+  color: black;
+  font-size: 1.5rem !important;
+}
+header .navbar .nav-link {
+  color: black !important;
+  font-size: 1.5rem !important;
+}
+
+/* fuente descargada en el pc */
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../assets/fonts/Inter-Medium.ttf");
+  color: rgb(77, 53, 23);
+}
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.copy {
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  font-size: 1;
+}
+
+.fondoHistoria {
+  background-color: rgba(0, 0, 0, 0.862745098);
+  color: antiquewhite;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  /* estilos pagina de historia*/
+  /*parrafo al lado de la imagen de historia*/
+}
+.fondoHistoria .textoHistoria {
+  /*background-color: rgba(255, 255, 255, 0.788);*/
+  padding: 6% 18%;
+  text-align: center;
+}
+.fondoHistoria .textoHistoria .recuadro {
+  background-color: #cfb22d;
+  margin: 0 auto;
+  padding: 5px;
+  display: inline;
+}
+.fondoHistoria .textoImagenHis {
+  display: flex;
+  align-items: center;
+}
+.fondoHistoria .textoImagenHis p {
+  font-size: 1rem;
+}
+
+.textHist {
+  font-size: 2rem;
+  margin: 2% 8% 1% 6%;
+  padding: 2%;
+}
+
+/*imagen que acompaña el texto en el index*/
+.imgHist {
+  width: 90%;
+  border-radius: 0% 1% 1% 0% !important;
+}
+
+.TituloParHist {
+  font-size: 2rem;
+  padding: 4px;
+  text-align: center;
+  animation: fadeInRight;
+  animation-duration: 2.5s;
+}
+
+.imgParraHist {
+  padding: 4px;
+  text-align: center;
+}
+.imgParraHist img {
+  background-color: antiquewhite;
+  border-radius: 2px;
+}
+
+/*estilos cerveceria*/
+.fondoCerveceria {
+  background-color: rgba(0, 0, 0, 0.862745098);
+}
+
+.contentCerveceria {
+  font-family: "Inter", sans-serif;
+  margin-top: 6%;
+  color: antiquewhite;
+}
+.contentCerveceria .textcerveceria {
+  display: block;
+  margin: 4% 10% 4% 10%;
+  align-items: center;
+  text-align: left;
+}
+.contentCerveceria .textcerveceria .recuadro {
+  background-color: #cfb22d;
+  margin: 0 auto;
+  padding: 5px;
+  display: inline;
+}
+
+.cajaCarruCerve {
+  width: 90%;
+  margin: 0 auto;
+}
+.cajaCarruCerve .carousel-inner {
+  border-style: solid;
+  border-color: #cfb22d;
+  border-radius: 2px;
+  border-width: 10px;
+  margin-bottom: 2%;
+}
+
+/* estilos pagina de cervezas*/
+.cervezas {
+  background-image: url(../img/fondoCervezas.jpg);
+  height: 100vh;
+  margin: 0%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cervezas .imagenCarrusel {
+  width: 45vh;
+  margin: 0 auto;
+  margin-top: 6%;
+}
+.cervezas .textCarrusel {
+  font-family: "Inter", sans-serif;
+}
+.cervezas .carousel-inner {
+  background-color: rgba(0, 0, 0, 0.431372549);
+  height: 100vh;
+}
+
+.fondoError {
+  background-image: url(../img/vasovacio.jpg);
+  height: 100vh;
+  margin: 0%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  z-index: 0;
+}
+
+.parrafoError {
+  position: fixed;
+  margin-left: 72%;
+  font-family: "Inter", sans-serif;
+  z-index: 5;
+  color: beige;
+  margin-right: 1%;
+  padding: 1%;
+  margin-top: 15%;
+  background-color: #cfb22d;
+  border-radius: 3px;
+}
+
+/* pantalla pequeña */
+@media only screen and (max-width: 767px) {
+  .parrafoError {
+    font-size: 0.5rem !important;
+    margin-top: 50%;
+    margin-left: 50%;
+    margin-right: 2%;
+  }
+  .row {
+    display: grid;
+  }
+  .textoHistoria {
+    padding: 10% 5% !important;
+  }
+  .fondoHistoria .textoImagenHis p {
+    font-size: 1.1rem;
+  }
+  .cajaCarruCerve {
+    width: 90%;
+  }
+  .contentCerveceria {
+    display: grid;
+  }
+  .contentCerveceria .textcerveceria {
+    margin-top: 8%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contentCerveceria .textcerveceria h2 {
+    text-align: center;
+  }
+  .contentCerveceria .textcerveceria .imagenParrafoCerveceria {
+    margin-bottom: 3%;
+  }
+  .cervezas .imagenCarrusel {
+    margin-top: 15%;
+    width: 50%;
+    overflow: hidden;
+  }
+  .cervezas .imagenCarrusel h6 {
+    font-size: 2rem;
+  }
+  .cervezas .imagenCarrusel p {
+    font-size: 1rem;
+    margin-bottom: 8%;
+  }
+  .cervezas .imagenCarrusel .carousel-inner {
+    height: 50vh;
+    width: 50%;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.contenVideoCarrito {
+  position: relative;
+  z-index: 1;
+}
+
+#productos {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #f5f5f5;
+  width: 40vh;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.btnAgregar {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.imagenCervezas {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#listaCarrito {
+  list-style: none;
+  padding: 0;
+}
+
+#vaciarCarrito,
+#guardarCarrito {
+  margin-top: 10px;
+}
+
+/* Otros estilos según necesidad */
+#carrito {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 300px;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding-top: 5% !important;
+  width: 30vh;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+#carrito h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#carrito ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#carrito p {
+  margin-bottom: 10px;
+}
+
+#carrito button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#carrito button:hover {
+  background-color: #23527c;
+}/*# sourceMappingURL=estilo.css.map */

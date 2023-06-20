@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerveza Patriota Nuestras cervezas</title>
+    <link rel="icon" href="../img/favicon_io/beer.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body class="cervezas">
+    <header>
+          <nav class="navbar navbar-dark bg-dark fixed-top opacity-75">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo-Patriota.png" alt="Logo Patriota" width="100%" height="100%">
+            </a>
+            <a class="navbar-brand"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/cerveceria.html">Cervecería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Cervezas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../pages/carrito.html">Carrito</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                     
+                      </a>
+                    </li>
+                  </ul>                  
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+<main>
+<div id="myCarousel" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" id="producto-1">
+      <div class="imagenCarrusel">
+        <img src="../img/Patriota-Valerosa-2B.png" class="d-block w-100" alt="Patriota Valerosa">
+        <div class="carousel-caption d-md-block">
+          <h2 style="font-weight:lighter; text-shadow: 1; font-size: 4rem;">Valerosa</h2>
+          <h6 class="fst-italic">Blonde Ale</h6>
+          <p>Ganadora de 5 medallas de oro a nivel nacional y 2 reconocimientos intl. Cerveza rubia con aromas frutales a manzanas verdes y cascara de naranja</p>
+          
+        
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" id="producto-2">
+      <div class="imagenCarrusel">
+        <img src="../img/Patriota-Benkos-2B.png" class="d-block w-100" alt="Patriota Benkos">
+        <div class="carousel-caption d-md-block">
+          <h2 style="font-weight:lighter; text-shadow: 1;font-size: 4rem;">Benkos</h2>
+          <h6 class="fst-italic">Stout</h6>
+          <p>Cerveza negra con adiciones de malta de cebada tostada, trigo y avena con aromas a café y chocolate y un delicioso sabor a capuchino suave</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" id="producto-3">
+      <div class="imagenCarrusel">
+        <img src="../img/Patriota-Anaray-2B.png" class="d-block w-100" alt="Patriota Anaray">
+        <div class="carousel-caption d-md-block">
+          <h2 style="font-weight:lighter; text-shadow: 1;font-size: 4rem;">Anaray</h2>
+          <h6 class="fst-italic">Fruit Beer</h6>
+          <p>Cerveza de trigo con una adición de duraznos naturales de Boyacá con un aroma característico a durazno y sutil sabor a frutas cítricas</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" id="producto-4">
+      <div class="imagenCarrusel">
+        <img src="../img/Patriota-Rooke-2B.png" class="d-block w-100" alt="Patriota Rooke">
+        <div class="carousel-caption d-md-block">
+          <h2 style="font-weight:lighter; text-shadow: 1;font-size: 4rem;">Rooke</h2>
+          <h6 class="fst-italic">Scottish Export</h6>
+          <p>Cerveza roja con sabor y aroma característicos a malta, con ligeros toques acaramelados y de frutos rojos, que proporcionan un final seco</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</main>
+    <footer>
+    
+            <div class="contenedorRedes">                    
+              <ul>
+              <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-bounce fa-xl"></i></a></li>
+              <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook fa-bounce fa-xl"></i></a></li>
+              <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter fa-bounce fa-xl"></i></a></li>
+              </ul>
+          </div> 
+            <div class="copy">
+                <a href ="../pages/error404.html" style="font-weight:lighter; color: rgb(175, 183, 190);"; >Copyright © 2023</a>
+            </div> 
+    </footer>
+
+      <script src="../js/bootstrap.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('.carousel').carousel({
+            pause: false
+          });
+        });
+      </script>
+      <script src="../js/main.js"></script>
+      <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

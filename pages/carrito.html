@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerveza Patriota - Nuestras cervezas</title>
+    <link rel="icon" href="../img/favicon_io/beer.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/estilo.css">
+</head>
+<body class="carritoFond">
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top opacity-75">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/Logo-Patriota.png" alt="Logo Patriota" width="100%" height="100%">
+                </a>
+                <a class="navbar-brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/historia.html">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/cerveceria.html">Cervecería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/cervezas.html">Cervezas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/ubicacion.html">Ubicación</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <video id="videoFondo" src="../assets/video/carrito(720p).mp4" autoplay="true" muted="true" loop="true" alt="video cerveza carrito"></video>
+        <div class="contenVideoCarrito">
+            
+                
+        
+        <div id="productos">
+            <div class="producto" data-id="1">
+                <img class="imagenCervezas" src="../img/Patriota-Anaray-2B.png" alt="Anaray">
+                <h3 class="nombreCerve">Anaray</h3>
+                <p class="precioCerve">Precio: $9000</p>
+                <button class="btnAgregar">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-id="2">
+                <img class="imagenCervezas" src="../img/5.png" alt="Benkos">
+                <h3 class="nombreCerve">Benkos</h3>
+                <p class="precioCerve">Precio: $10000</p>
+                <button class="btnAgregar">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-id="3">
+                <img class="imagenCervezas" src="../img/6.png" alt="Rooke">
+                <h3 class="nombreCerve">Rooke</h3>
+                <p class="precioCerve">Precio: $9500</p>
+                <button class="btnAgregar">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-id="4">
+                <img class="imagenCervezas" src="../img/7.png" alt="Valerosa">
+                <h3 class="nombreCerve">Valerosa</h3>
+                <p class="precioCerve">Precio: $11000</p>
+                <button class="btnAgregar">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <div id="carrito">
+            <h2>Carrito</h2>
+            <ul id="listaCarrito"></ul>
+            <p id="totalCarrito">Total: $0</p>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+            <button id="guardarCarrito">Guardar Carrito</button>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="contenedorRedes">
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-bounce fa-xl"></i></a></li>
+                <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook fa-bounce fa-xl"></i></a></li>
+                <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter fa-bounce fa-xl"></i></a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <a href="../pages/error404.html" style="font-weight:lighter; color: rgb(175, 183, 190);";>Copyright ©
+                2023</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
+</body>
+</html>

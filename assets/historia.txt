@@ -1,0 +1,39 @@
+historia
+Desde 2017
+Patriota Cervecería nació a finales del año 2016 de la idea de un Ingeniero químico boyacense quién realizó una maestría en ingeniería bioquímica en Francia y durante su pasantía en Bélgica descubrió la enorme variedad de estilos de cerveza existentes en el mundo; algunas con tiempos de maduración de años, otras con alta graduación alcohólica, otras con frutas y así un sin número más.
+
+La cervecería inicio de manera casera y se elaboraron las primeras cervezas en equipos de 20 Litros, obteniendo muy buenos resultados y ganando la primera medalla de oro a nivel nacional. En 2017 con apoyo de Fondo Emprender, Patriota adquirió equipos de mayor tamaño e inició la operación con una capacidad de 1.000 Litros de cerveza por mes.
+
+Actualmente la cervecería ha crecido de la mano de su restaurante en Samacá y de la presencia en múltiples establecimientos en Boyacá, Bogotá y Cundinamarca, alcanzando una capacidad de producción de 20.000 Litros de cerveza por mes que se distribuyen en presentaciones de lata y botella.
+
+MISIÓN PATRIOTA
+Desde los campos de Boyacá luchamos por elevar el nivel de la cervecería colombiana con el uso cuidadoso de ingredientes naturales para crear cervezas que a través de sus aromas, sabores intensos e historias nos hagan recordar por qué estamos orgullos de ser colombianos.
+
+VISIÓN PATRIOTA
+Ser una marca reconocida a nivel nacional e internacional por la calidad e innovación en sus cervezas, la excelencia en el servicio al cliente y la inclusión de novedosas estrategias de mercado que traigan valor intangible y comercial a nuestros compatriotas y clientes.
+
+cerveceria
+01. HECHA EN BOYACÁ
+Estas cervezas son un homenaje a la lucha por la libertad e independencia que dieron tantos hombres y mujeres enamorados de esta tierra maravillosa.
+
+02. ETIQUETAS NOVEDOSAS
+En nuestras etiquetas representamos a algunos próceres de nuestra patria: Simón Bolívar el valeroso Libertador, Benkos Biohó fundador de San Basilio de Palenque, el Coronel James Rooke y la osada boyacense Matilde Anaray.
+
+03. RECONOCIMIENTOS
+Patriota ha sido premiada con varios reconocimientos a nivel nacional e internacional por su aroma, sabor, cuerpo y textura haciendo que sea una de las cervecerías más premiadas de Colombia.
+
+04. ARTESANAL
+Iniciamos con la molienda de los cereales, luego los mezclamos con el agua caliente para extraer sus azúcares, agregamos el lúpulo para obtener su amargor y finalmente en un largo proceso de fermentación y maduración, la levadura convierte los azucares en alcohol.
+
+
+https://getbootstrap.com/docs/4.0/layout/grid/
+
+https://getbootstrap.esdocu.com/docs/5.1/layout/columns/
+
+https://getbootstrap.esdocu.com/docs/5.1/content/typography/
+
+https://getbootstrap.esdocu.com/docs/5.1/utilities/spacing/
+
+https://getbootstrap.esdocu.com/docs/5.1/getting-started/introduction/
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/

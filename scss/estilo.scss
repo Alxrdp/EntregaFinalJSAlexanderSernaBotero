@@ -1,0 +1,304 @@
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_footer.scss";
+@import "_mixins.scss";
+@import "_ubicacion.scss";
+@import "_index.scss";
+@import "_header.scss";
+
+/* fuente descargada en el pc */
+@font-face {
+	font-family: 'Inter', sans-serif;
+	src: url('../assets/fonts/Inter-Medium.ttf');
+    color:rgb(77, 53, 23)
+}
+body {
+	background-attachment: fixed;	
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	overflow-x: hidden;
+}
+.copy{
+	font-weight:lighter; 
+	color: rgb(0, 0, 0);
+	font-size: 1
+}
+.fondoHistoria{	
+	background-color: #000000dc;
+	color: antiquewhite;
+	@include fontInter;
+	font-size: 1.2rem;
+/* estilos pagina de historia*/
+	.textoHistoria{
+		/*background-color: rgba(255, 255, 255, 0.788);*/
+		padding:6% 18%;
+		text-align: center;
+			.recuadro{
+				@include cuadroAmarillo
+			}
+	}
+/*parrafo al lado de la imagen de historia*/
+	.textoImagenHis{ 
+		display: flex;
+		align-items: center;
+			p {
+			font-size: 1rem;
+			}
+	}
+}
+.textHist{
+	font-size: 2rem;
+	margin: 2% 8% 1% 6%;
+	padding: 2%;
+}
+/*imagen que acompaña el texto en el index*/
+.imgHist{
+	width: 90%;
+	border-radius: 0% 1% 1% 0% !important;
+}
+.TituloParHist{
+	font-size: 2rem;
+	padding: 4px;
+	text-align: center;
+	animation: fadeInRight;
+	animation-duration: 2.5s;
+}
+.imgParraHist{
+	img{
+		background-color: antiquewhite;
+		border-radius:2px;
+	}
+	padding: 4px;	
+	text-align: center;
+}
+/*estilos cerveceria*/
+.fondoCerveceria{
+	background-color: #000000dc;
+}
+.contentCerveceria{	
+	@include fontInter;
+	margin-top: 6%;	
+	color: antiquewhite;
+		.textcerveceria{
+			display: block;
+			margin: 4% 10% 4% 10%;
+			align-items: center;
+			text-align: left;
+			.recuadro{
+				@include cuadroAmarillo				
+			}					
+		}
+}
+.cajaCarruCerve{	
+	width: 90%;
+	margin: 0 auto;
+		.carousel-inner{
+			border-style:solid;
+			border-color: #cfb22d;
+			border-radius: 2px;
+			border-width: 10px;
+			margin-bottom: 2%;
+		}
+}
+/* estilos pagina de cervezas*/
+.cervezas{
+	background-image: url(../img/fondoCervezas.jpg);	
+	height: 100vh;
+	margin: 0%;
+	@include ajusteImgFondo;		
+		.imagenCarrusel{
+			width: 45vh;
+			margin:0 auto;
+			margin-top: 6%;
+		}		
+		.textCarrusel{
+			@include fontInter;		
+		}
+		.carousel-inner{
+			background-color: #0000006e;
+			height: 100vh;
+		}
+}
+.fondoError{
+	background-image: url(../img/vasovacio.jpg);
+	height: 100vh;
+	margin: 0%;
+	@include ajusteImgFondo;
+	background-color: #000;
+	z-index: 0;
+}
+.parrafoError{
+position: fixed;
+	margin-left: 72%;
+	@include fontInter;
+	z-index:5;
+	color: beige;
+	margin-right: 1%;
+	padding: 1%;
+	margin-top: 15%;
+	background-color:  #cfb22d;
+	border-radius: 3px;	
+	}
+/* pantalla pequeña */
+	@media only screen and (max-width: 767px){	
+		.parrafoError{
+			font-size: 0.5rem !important;
+			margin-top: 50%;
+			margin-left: 50%;
+			margin-right: 2%;
+		}
+		.row{
+			display: grid;
+		}
+		.textoHistoria{
+			padding: 10% 5% !important;			
+		}		
+		.fondoHistoria .textoImagenHis p {
+			font-size: 1.1rem;
+		}
+		.cajaCarruCerve{
+			width: 90%;
+		}
+		.contentCerveceria{
+			display: grid;			
+			.textcerveceria{
+				margin-top: 8%;
+				font-size: 1.5rem;
+				text-align: center;
+				h2{
+					text-align: center;				
+				}
+				.imagenParrafoCerveceria{
+					margin-bottom: 3%;				
+				}
+			}
+		}
+		.cervezas{
+			.imagenCarrusel{
+			margin-top: 15%;
+			width: 50%;
+			overflow: hidden;
+				h6{
+				font-size: 2rem;
+				}
+				p{
+				font-size: 1rem;
+				margin-bottom: 8%;
+				}
+			.carousel-inner{
+			height: 50vh;
+			width: 50%;
+			}
+			}
+	}
+}
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+  }
+
+#videoFondo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: -1;
+  }
+
+  .contenVideoCarrito {
+	position: relative;
+	z-index: 1;
+  }
+
+#productos {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+    width: 40vh;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  .btnAgregar{
+    display: block;
+	width: 100%;
+	padding: 8px;
+	background-color: #337ab7;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+  }
+  .imagenCervezas{
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  #listaCarrito {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #vaciarCarrito,
+  #guardarCarrito {
+    margin-top: 10px;
+  }
+  
+  /* Otros estilos según necesidad */
+  
+  #carrito {
+	position: fixed;
+	top: 0;
+	right: -400px;
+	width: 300px;
+	height: 100%;
+	background-color: #f5f5f5;
+	padding-top: 5% !important;
+    width: 30vh;
+	padding: 20px;
+	transition: right 0.3s ease-in-out;
+  }
+  
+  #carrito h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  #carrito ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 10px;
+  }
+  
+  #carrito p {
+	margin-bottom: 10px;
+  }
+  
+  #carrito button {
+	display: block;
+	width: 100%;
+	padding: 8px;
+	background-color: #337ab7;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+  }
+  
+  #carrito button:hover {
+	background-color: #23527c;
+  }
+  
+  

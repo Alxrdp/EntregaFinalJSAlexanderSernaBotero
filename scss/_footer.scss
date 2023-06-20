@@ -1,0 +1,38 @@
+/*footer, redes, copy*/
+footer {	
+    z-index: 10;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+	align-items: end;
+        ul{
+		list-style: none;
+        }
+        ul li a{
+			display: inline-block;
+			color:#fff;
+			padding: 10px 15px;
+        }        
+		.fa-instagram:before{
+		color:#a722ac !important;
+		}
+		.fa-facebook:before{
+		color:#2c29c7 !important;
+		}
+		.fa-twitter:before{
+		color:#2172dd !important;
+		
+		}			
+		.contenedorRedes ul li a:hover {
+		color: #00abf0;
+		background: #16151552;
+		padding: 10px 10px;
+		border-radius: 2px;
+		margin-right: 0%;
+		}
+}
+.copy a{
+	text-decoration: none !important;
+	color: #333333;
+	align-items: center !important;	
+}

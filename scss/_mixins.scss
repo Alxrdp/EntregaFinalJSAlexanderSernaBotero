@@ -1,0 +1,14 @@
+@mixin fontInter{
+    font-family: 'Inter', sans-serif;
+}
+@mixin ajusteImgFondo{
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@mixin cuadroAmarillo{
+    background-color: #cfb22d;
+	margin: 0 auto;
+	padding: 5px;
+	display: inline;
+}

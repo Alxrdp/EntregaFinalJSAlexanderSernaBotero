@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Cerveza Patriota" content="Pagina web publicitaria para una cerveza artesanal llamada Patriota creada y producida en Boyacá, Colombia">
+    <title>Cerveza Patriota La casa de la cerveza</title>
+    <link rel="icon" href="./img/favicon_io/beer.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>     
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/estilo.css">
+</head>
+<body>
+    <header>
+		<!-- inicio nav -->
+        <nav class="navbar navbar-dark bg-dark fixed-top opacity-75">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/Logo-Patriota.png" alt="Logo Patriota" width="100%" height="100%">
+                </a>
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/historia.html">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/cerveceria.html">Cervecería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/cervezas.html">Cervezas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/carrito.html">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/ubicacion.html">Ubicación</a>
+                            </li>
+                        </ul>                  
+                    </div>
+            </div>
+            </div>
+        </nav> 
+    </header>
+        <main>
+            <div class="contenVideo">
+                <video src="./assets/video/cerveza.mp4" autoplay="true" muted="true" loop="true" alt="video cerveza"></video>
+                    <div class="parrafoTitulo">
+                        <h1 class="tituloH1" >Cerveza Patriota</h1>
+                        <h2>Sabor a victoria</h2>
+                    </div>
+            </div>
+        </main>    
+    <footer>
+<!--Contenedor de redes sociales y copy-->
+                <div class="contenedorRedes">                    
+                    <ul>
+                        <li class="insta"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-bounce fa-xl"></i></a></li>
+                        <li class="face"><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook fa-bounce fa-xl"></i></a></li>
+                        <li class="twi"><a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter fa-bounce fa-xl"></i></a></li>
+                    </ul>
+                </div> 
+                <div class="copy" >
+                    <a href ="./pages/error404.html">Copyright © 2023</a>
+                </div>
+    </footer>
+        <script src="./js/edad.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>    
+</html>

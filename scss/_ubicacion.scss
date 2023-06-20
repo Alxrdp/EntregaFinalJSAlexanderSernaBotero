@@ -1,0 +1,119 @@
+.fondoUbicacion{
+	background-color: #000000dc;
+	color: antiquewhite;
+}
+.Ubicacion{	
+	@include ajusteImgFondo;
+	z-index: 0;
+}
+.list-group-item{
+	border: 0 !important;
+	background-color: #ffffffa1;
+}
+.contenDirecciones{
+	background-color:#f6f6f609;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align:center;
+	@include fontInter;
+	width: 100%;
+	height: 70%;
+	margin: 6% 10% 1% 10%;
+	padding: 2%;    
+	border-radius: 10px;	
+	box-shadow: 1px 1px 10px gray;	
+}
+.contenUbicacion{		
+	display: flex;
+}	
+.mapa-responsive{
+	text-align: center;
+	height: 80%;
+	width: 50%;
+	h3{
+		@include cuadroAmarillo	
+	}
+	h5{
+		@include cuadroAmarillo	
+	}
+}	
+/*estilo de fomulario*/
+.formularioUbicacion{
+	margin-top: 0%;
+	margin-bottom: 50px;
+	padding-bottom: 5%;
+	form{
+		width:500px;
+		padding:16px;
+		border-radius:10px;
+		margin:auto;
+		margin-bottom: 10px;
+		background-color: #ffffffa1;
+		position: relative;
+		font-family: Inter,sans-serif;color: rgb(19, 19, 19);
+		box-shadow: 1px 1px 10px gray;		
+	}	
+	form label{
+		width:72px;
+		font-weight:bold;
+		display:inline-block;
+	}	
+	form input[type="text"],
+	form input[type="email"]{
+		width:380px;
+		padding:3px 10px;
+		border:1px solid #f6f6f6;
+		border-radius:3px;
+		background-color:#f6f6f6;
+		margin:8px 0;
+		display:inline-block;
+	}	
+	form input[type="submit"]{
+		width:20%;
+		padding:8px 16px;
+		margin-top:32px;		
+		border:1px solid #000;
+		border-radius:5px;
+		display:block;
+		color:#fff;
+		background-color:#000;
+	}	
+	form input[type="submit"]:hover{
+		cursor:pointer;		
+	}	
+}
+@media only screen and (max-width: 767px){
+.Ubicacion{    
+    .contenUbicacion{
+        height:auto;
+        margin-bottom: 1%;			
+    }
+        .contenDirecciones{
+            background-color: transparent;
+            box-shadow: none;
+            .list-group{
+                width: 60%;
+                padding: 1%;
+                margin: 0 auto;
+            }
+            margin: 12% 1% 1% 1%;
+            padding: 0%;
+            height: 100%;
+            display:grid;
+            line-height:0.8;
+            font-weight: 1rem;
+            align-items: center;
+        .mapa-responsive{
+            margin: auto;
+            width: auto;
+            text-align: center;
+            align-items: center;
+        }    
+    }
+    .formularioUbicacion form{
+        margin: 15% auto 2% auto;
+    }
+    position: relative;
+}
+}
